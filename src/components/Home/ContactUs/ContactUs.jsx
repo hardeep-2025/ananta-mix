@@ -20,6 +20,7 @@ const ContactUs = () => {
                             </div>
                             <div className="contact_us_right_col">
                                 <div className="contact_section_form">
+                                    <h5 className="text-2xl font-semibold capitalize mb-2.5">Connect With Our Team</h5>
                                     <EnquireForm title="Connect With Our Team" formId={"contact"} button={"Submit Enquiry"} />
                                 </div>
                             </div>

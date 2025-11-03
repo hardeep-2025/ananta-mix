@@ -139,6 +139,29 @@
     background: var(--color-transparent);
     border-color: #421F12;
 }
+.contact_us_section .success-wrapper .success_msg {
+    color: var(--color-black);
+    text-align: center;
+}
+.success-wrapper .thanku-txt {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--font-semibold);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contact_us_section .enquire-form {
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_us_section .enquire-form .form-section {
+    width: 100%;
+}
+.contact_us_section .enquire-form .form-section h5 {
+    display: none;
+}
 @media (max-width: 1199px) {
     .contact_us_section .contact_us_flex {
         gap: 2rem;
@@ -205,6 +228,9 @@
     .contact_section_form .price_range_group .btn {
         font-size: 14px;
         padding: 10px 10px;
+    }
+    .contact_us_section .enquire-form {
+        min-height: 465px;
     }
 }
 @media (max-width: 480px) {

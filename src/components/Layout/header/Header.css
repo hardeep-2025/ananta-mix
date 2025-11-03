@@ -400,8 +400,7 @@
 form.enquire-form .form-section #enquiry-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: center;
     gap: 0px !important;
 }
 
@@ -761,7 +760,8 @@ form.enquire-form .form-section #enquiry-form {
 .success-wrapper .success_msg {
     color: var(--color-black);
     margin-bottom: 1rem;
-    line-height: 1.1;
+    line-height: 1.2;
+    text-align: center;
     font-size: 15px;
 }
 .price_list_popup_dialog.MuiDialog-root {
@@ -876,7 +876,16 @@ form.enquire-form .form-section #enquiry-form {
 .price_list_popup_dialog .we_get_row .form_label {
     margin-top: 0 !important;
 }
+.price_list_popup_dialog .enquire-form .form-section {
+    width: 100%;
+}  
+.price_list_popup_dialog .enquire-form .form-section #enquiry-form {
+    min-height: 320px;
+}
 @media (max-width: 1399px) {
+    .price_list_popup_dialog .enquire-form .form-section #enquiry-form {
+        min-height: 310px;
+    }
     .price_list_heading {
         font-size: 1.4vw;
     }
@@ -954,6 +963,9 @@ form.enquire-form .form-section #enquiry-form {
     .price_list_heading_block svg {
         font-size: 1.8vw;
     }
+    .price_list_popup_dialog .enquire-form .form-section #enquiry-form {
+        min-height: 280px;
+    }
     
 }
 @media (max-width: 991px) {
@@ -993,6 +1005,9 @@ form.enquire-form .form-section #enquiry-form {
     }
     .price_list_heading_block svg {
         font-size: 22px;
+    }
+    .price_list_popup_dialog .enquire-form .form-section #enquiry-form {
+        min-height: 280px;
     }
 }
 @media (max-width: 767px) {
@@ -1046,5 +1061,8 @@ form.enquire-form .form-section #enquiry-form {
     }
     .price_list_heading {
         font-size: 15px;
+    }
+    .price_list_popup_dialog .enquire-form .form-section #enquiry-form {
+        min-height: 250px;
     }
 }

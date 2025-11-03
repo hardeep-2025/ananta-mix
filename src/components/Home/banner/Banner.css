@@ -472,6 +472,15 @@
 .right_fixed_sidebar .price_list_subtext {
     margin-bottom: 0.5rem;
 }
+.right_fixed_sidebar .enquire-form {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_fixed_sidebar .enquire-form .form-section {
+    width: 100%;
+} 
 @media (min-height : 800px) {
     .right_fixed_sidebar .bottom_fixed_sidebar {
         padding: 1.5vw;
@@ -482,8 +491,14 @@
         margin-top: 72px;
         height: calc(100% - 72px);
     }
+    .right_fixed_sidebar .enquire-form {
+        min-height: 330px;
+    }
 }
 @media (max-width: 1199px) {
+    .right_fixed_sidebar .enquire-form {
+        min-height: 300px;
+    }
     .right_fixed_sidebar {
         margin-top: 67px;
         height: calc(100% - 67px);
@@ -530,6 +545,9 @@
     }
     .right_fixed_sidebar .price_list_subtext {
         font-size: 1vw;
+    }
+    .right_fixed_sidebar .enquire-form {
+        min-height: 290px;
     }
 }
 @media (max-width: 991px) {
