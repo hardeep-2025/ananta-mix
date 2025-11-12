@@ -139,7 +139,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                             <>
                                 <span className='thanku-txt'>Thank You!</span>
                                 <div className='flex flex-col success_msg'>
-                                    <span>We've received your request for Ananta Aspire pricing. Our team will share the details soon.</span>
+                                    <span>Got your request for Ananta Aspire pricing. Our team will share the details soon.</span>
                                 </div>
                             </>
                         );
@@ -148,7 +148,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                             <>
                                 <span className='thanku-txt'>Thank You!</span>
                                 <div className='flex flex-col success_msg'>
-                                    <span>We've received your site visit request. Our team will contact you soon to confirm your Ananta Aspire tour.</span>
+                                    <span>Got your site visit request. Our team will contact you soon to confirm your Ananta Aspire tour.</span>
                                 </div>
                             </>
                         );
@@ -164,7 +164,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                     } else {
                         setFormSuccess(
                             <>
-                                <span className='thanku-txt'>THANK YOU </span>
+                                <span className='thanku-txt'>Thank You!</span>
                                 <div className='flex flex-col success_msg'>
                                     <span> For Trusting Us with Your Home Search!!</span> 
                                     <span>We'll Reach Out Soon With All the Details.</span> 
