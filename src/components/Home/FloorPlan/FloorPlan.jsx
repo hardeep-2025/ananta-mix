@@ -25,16 +25,16 @@ const FloorPlan = () => {
                     <Row>
                         <Col>
                             <h2 className="main_heading">Floor Plan</h2>
-                            <Tab.Container id="floor_plans_tabs" defaultActiveKey="4+1BHK">
+                            <Tab.Container id="floor_plans_tabs" defaultActiveKey="3BHK">
                                 <Nav variant="pills" className="flex-row floor_plans_nav">
                                     <Nav.Item>
-                                        <Nav.Link eventKey="4+1BHK">4 BHK + Study Attendant Room</Nav.Link>
+                                        <Nav.Link eventKey="3BHK">3 BHK Apartment</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link eventKey="3+1BHK">3 BHK + Study Attendant Room</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="3BHK">3 BHK Apartment</Nav.Link>
+                                        <Nav.Link eventKey="4+1BHK">4 BHK + Study Attendant Room</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link eventKey="penthouse">Pent House / Duplex</Nav.Link>
