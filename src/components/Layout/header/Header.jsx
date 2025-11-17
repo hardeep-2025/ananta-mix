@@ -2,10 +2,10 @@ import "./Header.css";
 import logo from "../../../assests/images/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import phoneIcon from "../../../assests/images/phone.png";
+// import phoneIcon from "../../../assests/images/phone.png";
 import menuIcon from "../../../assests/images/menus.png";
 import { Container, Navbar, Nav, Offcanvas, Button } from "react-bootstrap";
-import whatsappIcon from "../../../assests/images/whatsapp.png";
+// import whatsappIcon from "../../../assests/images/whatsapp.png";
 import { useFormContext } from "../FormContext";
 import PriceDetailsForm from "../PriceDetailsForm/PriceDetailsForm";
 import RequestDetailsForm from "../RequestDetailsForm/RequestDetailsForm";
@@ -231,10 +231,10 @@ const Header = () => {
 
             <div className="header_right">
               <div className="header_right_top">
-                <Link to={"tel:+918609000900"} className="header_call blink">
+                {/* <Link to={"tel:+918609000900"} className="header_call blink">
                   <img src={phoneIcon} alt="Phone" className="phone_icon" />
                   +91 8609000900
-                </Link>
+                </Link> */}
                 <Button className="header_request_btn" onClick={() => openPriceForm("Get Complete Project Details", "Share your information to receive all updates on Ananta Aspire’s premium apartments and offers.", "Enquire Now", "request")}>Request Details</Button>
               </div>
               <p className="header_rera_number">PBRERA-SAS79-PR0777</p>
@@ -248,12 +248,11 @@ const Header = () => {
       {/* Download Brochure Button */}
       {/* <div className='sticky h-0 z-20' style={{ top: "45%" }}><button tabIndex='-1' className="w-max text-xs font-medium capitalize cursor-pointer bg-primary-brown p-2 sm:p-2.5 rounded-md text-white absolute -rotate-90 download-broucher-btn" style={{ right: "-46px" }} onClick={handleOpen}>Download Brochure</button>
       </div> */}
-      <div className="fixed_btns_header z-20">
-        {/* <img src={downloadIcon} alt="Download" className="header_btns_float download" onClick={handleOpen} /> */}
+      {/* <div className="fixed_btns_header z-20">
         <a href="https://wa.me/+918609000900" rel="noreferrer" target="_blank">
           <img src={whatsappIcon} alt="Whatsapp" className="header_btns_float whatsapp" />
         </a>
-      </div>
+      </div> */}
 
       <PriceDetailsForm />
       <RequestDetailsForm />

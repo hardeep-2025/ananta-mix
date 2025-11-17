@@ -85,6 +85,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: end;
 }
 .main_header .header_right .header_request_btn {
     font-size: 15px;
