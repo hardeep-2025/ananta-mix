@@ -69,7 +69,7 @@
 }
 @media (max-width: 480px) {
     .gallery-images-list .gallery-image {
-        height: 180px !important;
+        height: 150px !important;
     }
 }
 

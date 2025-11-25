@@ -1,3 +1,4 @@
+import "./Amenities.css";
 import smartHomes from '../../../assests/images/amenities/smart-home.png';
 import sketch from '../../../assests/images/amenities/sketch.png';
 import projects from '../../../assests/images/amenities/check-list.png';
@@ -111,15 +112,16 @@ const Amenities = () => {
                 <Row>
                     <Col>
                         <h2 className="main_heading">Amenities</h2>
-                        <div className="max-w-5xl m-auto pt-5 text-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-flow-row gap-3.5 md:gap-7">
+
+                        <div className="amenities_grid_block m-auto pt-5">
                             {amenitiesItems.map((item, i) => (
-                                <div key={i} className='p-5 bg-primary-brown rounded-2xl text-white cursor-pointer aminities-group' style={{boxShadow : "0px 3px 20px 0px rgba(0, 0, 0, 0.30196078431372547)"}}>
+                                <div className="amenities_grid_item cursor-pointer aminities-group" key={i}>
                                     <img
                                         src={item.image}
                                         alt={item.title}
-                                        className='w-60 mx-auto mb-3.5 animate-wobble'
+                                        className='amenities_img animate-wobble'
                                     />
-                                    <p className='text-sm capitalize font-norms leading-snug mb-0'>{item.title}</p>
+                                    <p className='amenities_text'>{item.title}</p>
                                 </div>
                             ))}
                         </div>

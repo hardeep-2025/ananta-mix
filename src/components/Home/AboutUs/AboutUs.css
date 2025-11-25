@@ -66,17 +66,18 @@
     color: var(--color-black);
 }
 @media (max-width: 991px) {
-    .about_us_right_content {
-        flex: 0 0 350px;
-    }
-}
-@media (max-width: 767px) {
+    
     .about_us_flex_div {
         flex-direction: column-reverse;
     }
     .about_us_right_content {
         flex: 0 0 350px;
         max-width: 350px;
+    }
+}
+@media (max-width: 767px) {
+    .main_heading {
+        font-size: 30px;
     }
 }
 @media (max-width: 480px) {

@@ -125,6 +125,9 @@
      .connectivity_data_item:nth-child(3)::after{
         display: block;
     }
+    .connectivity_data_item .connectivity_data_title {
+        margin-bottom: 10px !important;
+    }
 }
 @media (max-width: 420px) {
     .connectivity_data_item .connectivity_data_icon {
@@ -132,5 +135,14 @@
     }
     .connectivity_data_item img.connectivity_data_icon {
         width: 20px;
+    }
+    .connectivity_data_item {
+        gap: 5px;
+    }
+    .connectivity_data_item .connectivity_data_title {
+        font-size: 14px;
+    }
+    .connectivity_data_grid {
+        gap: 1.5rem 2rem;
     }
 }

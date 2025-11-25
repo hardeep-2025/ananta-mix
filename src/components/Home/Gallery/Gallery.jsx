@@ -1,6 +1,6 @@
 import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import "./Gallery.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import gallery1 from "../../../assests/images/gallery/new-gallery/gallery1.jpg";
 import gallery2 from "../../../assests/images/gallery/new-gallery/gallery2.jpg";
 import gallery3 from "../../../assests/images/gallery/new-gallery/gallery3.jpg";
@@ -375,6 +375,14 @@ const Gallery = () => {
         }
     ]
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 992);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return(
         <section className="gallery_section padding-top padding-bottom" id="gallery">
             <Container>
@@ -393,7 +401,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {images.map((item,i) => (
@@ -426,7 +434,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {interiorImages.map((item,i) => (
@@ -459,7 +467,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {bedroomImages.map((item,i) => (
@@ -492,7 +500,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {livingImages.map((item,i) => (
@@ -525,7 +533,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {kitchenImages.map((item,i) => (
@@ -558,7 +566,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {lobbyImages.map((item,i) => (
@@ -591,7 +599,7 @@ const Gallery = () => {
                                     variant="quilted"
                                     cols={6}
                                     gap={8}
-                                    rowHeight={250}
+                                    rowHeight={isMobile ? 150 : 200}
                                     className='gallery-images-list'
                                 >
                                     {poolImages.map((item,i) => (

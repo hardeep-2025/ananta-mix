@@ -62,6 +62,11 @@
 .floor_plans_btn:active img {
     filter: invert(1);
 }
+@media (max-width: 1399px) {
+    .floor_plans_nav .nav-link {
+        font-size: 18px;
+    }
+}
 @media (max-width: 991px) {
     .floor_plans_nav .nav-link  {
         font-size: 16px;
@@ -78,5 +83,11 @@
     .floor_palns_flex .floor_text_content,
     .floor_plans_btn {
         font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .floor_plans_nav .nav-link {
+        padding: 8px 10px;
+        font-size: 15px;
     }
 }

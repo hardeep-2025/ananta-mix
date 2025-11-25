@@ -11,6 +11,10 @@ import ConnectivityPage from './components/Connectivity/connectivity';
 import GalleryPage from './components/Gallery/gallery';
 import ContactUsPage from './components/ContactUs/ContactUs';
 import AmenityPage from './components/Amenities/Amenities';
+import BlogPage from './components/BlogPage/BlogPage';
+import BlogDetail from './components/BlogPage/BlogDetails';
+import CategoryPage from './components/BlogPage/CategoryPage';
+import TagPage from './components/BlogPage/TagPage';
 
 function App() {
 
@@ -52,7 +56,13 @@ function App() {
             <Route path='/connectivities' element={<ConnectivityPage />} />
             <Route path='/galleries' element={<GalleryPage />} />
             <Route path='/contactus' element={<ContactUsPage />} />
-        <Route path='amenity' element={<AmenityPage/>}/>
+            <Route path='/amenity' element={<AmenityPage/>}/>
+
+            {/* Blogs */}
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:url" element={<BlogDetail />} />
+            <Route path="/category/:url" element={<CategoryPage />} />
+            <Route path="/tag/:url" element={<TagPage />} />
 
           </Route>
         </Routes>
