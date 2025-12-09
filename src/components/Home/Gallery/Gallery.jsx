@@ -1,15 +1,6 @@
 import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import "./Gallery.css";
 import { useEffect, useState } from "react";
-import gallery1 from "../../../assests/images/gallery/new-gallery/gallery1.jpg";
-import gallery2 from "../../../assests/images/gallery/new-gallery/gallery2.jpg";
-import gallery3 from "../../../assests/images/gallery/new-gallery/gallery3.jpg";
-import gallery4 from "../../../assests/images/gallery/new-gallery/gallery4.jpg";
-import gallery5 from "../../../assests/images/gallery/new-gallery/gallery5.jpg";
-import gallery6 from "../../../assests/images/gallery/new-gallery/gallery6.jpg";
-import gallery7 from "../../../assests/images/gallery/new-gallery/gallery7.jpg";
-import gallery8 from "../../../assests/images/gallery/new-gallery/gallery8.jpg";
-import gallery9 from "../../../assests/images/gallery/new-gallery/gallery9.jpg";
 import { ImageList, ImageListItem } from "@mui/material";
 import Lightbox from 'yet-another-react-lightbox';
 import { Counter, Fullscreen, Zoom } from 'yet-another-react-lightbox/plugins';
@@ -17,58 +8,68 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
+const gallery1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery1.webp`;
+const gallery2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery2.webp`;
+const gallery3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery3.webp`;
+const gallery4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery4.webp`;
+const gallery5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery5.webp`;
+const gallery6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery6.webp`;
+const gallery7 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery7.webp`;
+const gallery8 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery8.webp`;
+const gallery9 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery9.webp`;
+
 // Interior Images
-import interior1 from "../../../assests/images/gallery/new-gallery/interior1.jpg";
-import interior2 from "../../../assests/images/gallery/new-gallery/interior2.jpg";
-import interior3 from "../../../assests/images/gallery/new-gallery/interior3.jpg";
-import interior4 from "../../../assests/images/gallery/new-gallery/interior4.jpg";
-import interior5 from "../../../assests/images/gallery/new-gallery/interior5.jpg";
-import interior6 from "../../../assests/images/gallery/new-gallery/interior6.png";
-import interior7 from "../../../assests/images/gallery/new-gallery/interior7.jpg";
-import interior8 from "../../../assests/images/gallery/new-gallery/interior8.jpg";
-import interior9 from "../../../assests/images/gallery/new-gallery/interior9.jpg";
+const interior1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior1.webp`;
+const interior2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior2.webp`;
+const interior3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior3.webp`;
+const interior4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior4.webp`;
+const interior5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior5.webp`;
+const interior6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior6.webp`;
+const interior7 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior7.webp`;
+const interior8 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior8.webp`;
+const interior9 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/interior9.webp`;
 
 // Bedroom Images
-import bedroom1 from "../../../assests/images/gallery/new-gallery/bedroom1.png";
-import bedroom2 from "../../../assests/images/gallery/new-gallery/bedroom2.png";
-import bedroom3 from "../../../assests/images/gallery/new-gallery/bedroom3.png";
-import bedroom4 from "../../../assests/images/gallery/new-gallery/bedroom4.png";
-import bedroom5 from "../../../assests/images/gallery/new-gallery/bedroom5.jpg";
-import bedroom6 from "../../../assests/images/gallery/new-gallery/bedroom6.jpg";
-import bedroom7 from "../../../assests/images/gallery/new-gallery/bedroom7.png";
-import bedroom8 from "../../../assests/images/gallery/new-gallery/bedroom8.png";
-import bedroom9 from "../../../assests/images/gallery/new-gallery/bedroom9.jpg";
+const bedroom1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom1.webp`;
+const bedroom2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom2.webp`;
+const bedroom3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom3.webp`;
+const bedroom4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom4.webp`;
+const bedroom5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom5.webp`;
+const bedroom6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom6.webp`;
+const bedroom7 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom7.webp`;
+const bedroom8 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom8.webp`;
+const bedroom9 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/bedroom9.webp`;
 
 // Living Room Images
-import livingRoom1 from "../../../assests/images/gallery/new-gallery/living-rrom1.jpg";
-import livingRoom2 from "../../../assests/images/gallery/new-gallery/living-rrom2.png";
-import livingRoom3 from "../../../assests/images/gallery/new-gallery/living-rrom3.jpg";
-import livingRoom4 from "../../../assests/images/gallery/new-gallery/living-rrom4.jpg";
-import livingRoom5 from "../../../assests/images/gallery/new-gallery/living-rrom5.jpg";
-import livingRoom6 from "../../../assests/images/gallery/new-gallery/living-rrom6.jpg";
-import livingRoom7 from "../../../assests/images/gallery/new-gallery/living-rrom7.png";
-import livingRoom8 from "../../../assests/images/gallery/new-gallery/living-rrom8.png";
-import livingRoom9 from "../../../assests/images/gallery/new-gallery/living-rrom9.jpg";
+const livingRoom1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom1.webp`;
+const livingRoom2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom2.webp`;
+const livingRoom3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom3.webp`;
+const livingRoom4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom4.webp`;
+const livingRoom5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom5.webp`;
+const livingRoom6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom6.webp`;
+const livingRoom7 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom7.webp`;
+const livingRoom8 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom8.webp`;
+const livingRoom9 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/living-rrom9.webp`;
 
 // Kitchen Images
-import kitchen1 from "../../../assests/images/gallery/new-gallery/kitchen1.png";
-import kitchen2 from "../../../assests/images/gallery/new-gallery/kitchen2.png";
-import kitchen3 from "../../../assests/images/gallery/new-gallery/kitchen3.png";
-import kitchen4 from "../../../assests/images/gallery/new-gallery/kitchen4.png";
-import kitchen5 from "../../../assests/images/gallery/new-gallery/kitchen5.jpg";
-import kitchen6 from "../../../assests/images/gallery/new-gallery/kitchen6.png";
+const kitchen1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen1.webp`;
+const kitchen2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen2.webp`;
+const kitchen3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen3.webp`;
+const kitchen4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen4.webp`;
+const kitchen5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen5.webp`;
+const kitchen6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/kitchen6.webp`;
 
 // Lobby Images
-import lobb1 from "../../../assests/images/gallery/new-gallery/lobby1.png";
-import lobb2 from "../../../assests/images/gallery/new-gallery/lobby2.png";
-import lobb3 from "../../../assests/images/gallery/new-gallery/lobby3.jpg";
-import lobb4 from "../../../assests/images/gallery/new-gallery/lobby4.jpg";
-import lobb5 from "../../../assests/images/gallery/new-gallery/lobby5.jpg";
-import lobb6 from "../../../assests/images/gallery/new-gallery/lobby6.png";
+const lobb1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby1.webp`;
+const lobb2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby2.webp`;
+const lobb3 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby3.webp`;
+const lobb4 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby4.webp`;
+const lobb5 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby5.webp`;
+const lobb6 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/lobby6.webp`;
 
 // Pool Image
-import pool1 from "../../../assests/images/gallery/new-gallery/pool1.png";
-import pool2 from "../../../assests/images/gallery/new-gallery/gallery8.jpg";
+const pool1 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/pool1.webp`;
+const pool2 = `${process.env.REACT_APP_API_URL}/assests/images/gallery/gallery8.webp`;
 
 const Gallery = () => {
 

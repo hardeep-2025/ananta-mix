@@ -46,9 +46,7 @@ const Home = () => {
                 localSchema={localSchema}
             />
 
-            {/* <BannerSlider /> */}
             <Banner />
-            {/* <ListSection /> */}
             <AboutUs />
             <FloorPlan />
             <SmartLiving />

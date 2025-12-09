@@ -1,25 +1,26 @@
 import "./Amenities.css";
-import smartHomes from '../../../assests/images/amenities/smart-home.png';
-import sketch from '../../../assests/images/amenities/sketch.png';
-import projects from '../../../assests/images/amenities/check-list.png';
-import stadium from '../../../assests/images/amenities/stadium.png';
-import park from '../../../assests/images/amenities/park.png';
-import swimming from '../../../assests/images/amenities/swimming-pool.png';
-import powerStation from '../../../assests/images/amenities/power-station.png';
-import security from '../../../assests/images/amenities/secure-shield.png';
-import tableTennis from '../../../assests/images/amenities/Table-Tennis.png';
-import weight from '../../../assests/images/amenities/weight.png';
-import badminton from '../../../assests/images/amenities/badminton.png';
-import volleyball from '../../../assests/images/amenities/volleyball.png';
-import skate from '../../../assests/images/amenities/skate.png';
-import poolTable from '../../../assests/images/amenities/pool-table.png';
-import spa from '../../../assests/images/amenities/massage.png';
-import waterSupply from '../../../assests/images/amenities/water-supply.png';
-import backup from '../../../assests/images/amenities/backup.png';
-import fireSystem from '../../../assests/images/amenities/extinguisher.png';
-import coffee from '../../../assests/images/amenities/coffee.png';
-import earthquake from '../../../assests/images/amenities/earthquake.png';
 import { Col, Container, Row } from 'react-bootstrap';
+
+const smartHomes = `${process.env.REACT_APP_API_URL}/assests/images/amenities/smart-home.webp`;
+const sketch = `${process.env.REACT_APP_API_URL}/assests/images/amenities/sketch.webp`;
+const projects = `${process.env.REACT_APP_API_URL}/assests/images/amenities/check-list.webp`;
+const stadium = `${process.env.REACT_APP_API_URL}/assests/images/amenities/stadium.webp`;
+const park = `${process.env.REACT_APP_API_URL}/assests/images/amenities/park.webp`;
+const swimming = `${process.env.REACT_APP_API_URL}/assests/images/amenities/swimming-pool.webp`;
+const powerStation = `${process.env.REACT_APP_API_URL}/assests/images/amenities/power-station.webp`;
+const security = `${process.env.REACT_APP_API_URL}/assests/images/amenities/secure-shield.webp`;
+const tableTennis = `${process.env.REACT_APP_API_URL}/assests/images/amenities/Table-Tennis.webp`;
+const weight = `${process.env.REACT_APP_API_URL}/assests/images/amenities/weight.webp`;
+const badminton = `${process.env.REACT_APP_API_URL}/assests/images/amenities/badminton.webp`;
+const volleyball = `${process.env.REACT_APP_API_URL}/assests/images/amenities/volleyball.webp`;
+const skate = `${process.env.REACT_APP_API_URL}/assests/images/amenities/skate.webp`;
+const poolTable = `${process.env.REACT_APP_API_URL}/assests/images/amenities/pool-table.webp`;
+const spa = `${process.env.REACT_APP_API_URL}/assests/images/amenities/massage.webp`;
+const waterSupply = `${process.env.REACT_APP_API_URL}/assests/images/amenities/water-supply.webp`;
+const backup = `${process.env.REACT_APP_API_URL}/assests/images/amenities/backup.webp`;
+const fireSystem = `${process.env.REACT_APP_API_URL}/assests/images/amenities/extinguisher.webp`;
+const coffee = `${process.env.REACT_APP_API_URL}/assests/images/amenities/coffee.webp`;
+const earthquake = `${process.env.REACT_APP_API_URL}/assests/images/amenities/earthquake.webp`;
 
 const Amenities = () => {
 

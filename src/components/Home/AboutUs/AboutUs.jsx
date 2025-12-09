@@ -1,6 +1,7 @@
 import "./AboutUs.css";
 import { Col, Container, Row } from "react-bootstrap";
-import aboutImg from "../../../assests/images/about-us.jpg";
+
+const aboutImg = `${process.env.REACT_APP_API_URL}/assests/images/about-us.webp`;
 
 const aboutLists = [
     "Impressive Architecture",

@@ -1,11 +1,12 @@
 import "./ProjectConnectivity.css";
-import connectivityBg from "../../../assests/images/connectivity/connectivity_bg.jpg";
-import mapImg from "../../../assests/images/connectivity/location-map.png";
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 import { faBuilding, faMapMarkerAlt, faRoad, faUniversity } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import planeIcon from "../../../assests/images/connectivity/plane.png";
-import trainIcon from "../../../assests/images/connectivity/train.png";
+
+const connectivityBg = `${process.env.REACT_APP_API_URL}/assests/images/connectivity/connectivity_bg.webp`;
+const mapImg = `${process.env.REACT_APP_API_URL}/assests/images/connectivity/location-map.webp`;
+const planeIcon = `${process.env.REACT_APP_API_URL}/assests/images/connectivity/plane.webp`;
+const trainIcon = `${process.env.REACT_APP_API_URL}/assests/images/connectivity/train.webp`;
 
 const connectivityData = [
     {

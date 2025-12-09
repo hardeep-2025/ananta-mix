@@ -1,14 +1,15 @@
 import "./Header.css";
-import logo from "../../../assests/images/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import phoneIcon from "../../../assests/images/phone.png";
-import menuIcon from "../../../assests/images/menus.png";
 import { Container, Navbar, Nav, Offcanvas, Button } from "react-bootstrap";
-// import whatsappIcon from "../../../assests/images/whatsapp.png";
 import { useFormContext } from "../FormContext";
 import PriceDetailsForm from "../PriceDetailsForm/PriceDetailsForm";
 import RequestDetailsForm from "../RequestDetailsForm/RequestDetailsForm";
+
+// const whatsappIcon = `${process.env.REACT_APP_API_URL}/assests/images/whatsapp.png`;
+// const phoneIcon = `${process.env.REACT_APP_API_URL}/assests/images/phone.png`;
+const logo = `${process.env.REACT_APP_API_URL}/assests/images/logo.png`;
+const menuIcon = `${process.env.REACT_APP_API_URL}/assests/images/menus.png`;
 
 const Header = () => {
 

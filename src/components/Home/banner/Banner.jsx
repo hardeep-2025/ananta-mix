@@ -1,28 +1,30 @@
 import "./Banner.css";
 import Slider from "react-slick";
-import banner1 from "../../../assests/images/banner/banner1.jpg";
-import bannerSmall1 from "../../../assests/images/banner/banner1-small.jpg";
-import banner2 from "../../../assests/images/banner/banner2.png";
-import bannerSmall2 from "../../../assests/images/banner/banner2-small.jpg";
-import banner3 from "../../../assests/images/banner/banner3.png";
-import bannerSmall3 from "../../../assests/images/banner/banner3-small.jpg";
-import banner4 from "../../../assests/images/banner/banner4.png";
-import bannerSmall4 from "../../../assests/images/banner/banner4-small.jpg";
-import banner5 from "../../../assests/images/banner/banner5.png";
-import bannerSmall5 from "../../../assests/images/banner/banner5-small.jpg";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import homeIcon from "../../../assests/images/home.png";
 import { useState } from "react";
 import EnquireForm from "../../Layout/EnquireForm/EnquireForm";
 import { useFormContext } from "../../Layout/FormContext";
-import logo from "../../../assests/images/logo.png";
 
-import telephone from "../../../assests/images/telephone.png";
-import appIcon from "../../../assests/images/app-icon.png";
-import rupee from "../../../assests/images/rupee.png";
-import business from "../../../assests/images/businessman.png";
-import operator from "../../../assests/images/operator.png";
-import carIcon from "../../../assests/images/car-icon.png";
+const homeIcon = `${process.env.REACT_APP_API_URL}/assests/images/home.webp`;
+const logo = `${process.env.REACT_APP_API_URL}/assests/images/logo.png`;
+
+const telephone = `${process.env.REACT_APP_API_URL}/assests/images/telephone.webp`;
+const appIcon = `${process.env.REACT_APP_API_URL}/assests/images/app-icon.webp`;
+const rupee = `${process.env.REACT_APP_API_URL}/assests/images/rupee.webp`;
+const business = `${process.env.REACT_APP_API_URL}/assests/images/businessman.webp`;
+const operator = `${process.env.REACT_APP_API_URL}/assests/images/operator.png`;
+const carIcon = `${process.env.REACT_APP_API_URL}/assests/images/car-icon.webp`;
+
+const banner1 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner1.webp`;
+const bannerSmall1 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner1-small.webp`;
+const banner2 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner2.webp`;
+const bannerSmall2 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner2-small.webp`;
+const banner3 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner3.webp`;
+const bannerSmall3 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner3-small.webp`;
+const banner4 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner4.webp`;
+const bannerSmall4 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner4-small.webp`;
+const banner5 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner5.webp`;
+const bannerSmall5 = `${process.env.REACT_APP_API_URL}/assests/images/banner/banner5-small.webp`;
 
 const weGetOptions = [
     {

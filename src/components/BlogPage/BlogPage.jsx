@@ -3,12 +3,13 @@ import MetaData from "../Layout/MetaData";
 import "./BlogPage.css";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import defaultImage from "../../assests/images/placeholder-image.webp";
 import ReactPaginate from "react-paginate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import BlogSidebar from "./BlogSidebar";
+
+const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
 
 const BlogPage = () => {
 
@@ -49,8 +50,8 @@ const BlogPage = () => {
         <>
 
             <MetaData 
-                title={"Blogs - Vamana Arvindam"}
-                description={"Experience unmatched luxury and convenience with the premium blogs at Vamana Group."}
+                title={"Blogs - Ananta Aspire Zirakpur"}
+                description={"Experience unmatched luxury and convenience with the premium blogs at Ananta Aspire."}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

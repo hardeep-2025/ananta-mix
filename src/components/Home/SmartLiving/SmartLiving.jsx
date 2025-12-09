@@ -1,9 +1,10 @@
 import "./SmartLiving.css";
 import { Col, Container, Row } from "react-bootstrap";
-import smartLivingImg from "../../../assests/images/smart-living.jpg";
-import smartLivingSmall from "../../../assests/images/smart-image.png";
-// import video from "../../../assests/images/Ananta.mp4";
+// import video `${process.env.REACT_APP_API_URL}/assests/images/Ananta.mp4";
 import { useState } from "react";
+
+const smartLivingImg = `${process.env.REACT_APP_API_URL}/assests/images/smart-living.webp`;
+const smartLivingSmall = `${process.env.REACT_APP_API_URL}/assests/images/smart-image.webp`;
 
 const features = [
   {

@@ -27,8 +27,8 @@
 .connectivity_accordion {
     --bs-accordion-bg: var(--color-transparent);
     color: var(--color-white);
-    --bs-accordion-btn-active-icon: url("../../../assests/images/connectivity/down.png");
-    --bs-accordion-btn-icon: url("../../../assests/images/connectivity/down.png");
+    --bs-accordion-btn-active-icon: url("https://anantaaspirezirakpur.co/assests/images/connectivity/down.webp");
+    --bs-accordion-btn-icon: url("https://anantaaspirezirakpur.co/assests/images/connectivity/down.webp");
     display: flex;
     flex-direction: column;
     gap: 2rem;
