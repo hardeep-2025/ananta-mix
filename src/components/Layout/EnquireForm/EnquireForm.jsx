@@ -96,7 +96,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
     const [formSuccess, setFormSuccess] = useState("");
     const [formError, setFormError] = useState("");
     const [loading, setLoading] = useState(false);
-    const [priceRange, setPriceRange] = useState("1 Cr to 1.5 Cr");
+    const [priceRange, setPriceRange] = useState("1.5 Cr to 2 Cr");
     
 
     const handleSubmit = (e) => {
@@ -211,7 +211,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
 
     const resetForm = () => {
         setFormData({ name: "", email: "", mobileNumber: "", terms: false });
-        setPriceRange('1 Cr to 1.5 Cr');
+        setPriceRange('1.5 Cr to 2 Cr');
     }
     console.log(formId);
 
@@ -283,10 +283,10 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
 
                                 <ToggleButtonGroup name={`price_range_${formId}`} className='price_range_group' type="radio" value={priceRange} onChange={(val) => setPriceRange(val)}>
                                     <ToggleButton id={`${formId+"_1"}`} value={"1 Cr to 1.5 Cr"} className={`${priceRange === "1 Cr to 1.5 Cr" && 'active'}`}>
-                                        1 Cr to 1.5 Cr
+                                        1 Cr to 1.7 Cr
                                     </ToggleButton>
                                     <ToggleButton id={`${formId+"_2"}`} value={"1.5 Cr to 2 Cr"}>
-                                        1.5 Cr to 2 Cr
+                                        1.7 Cr to 2 Cr
                                     </ToggleButton>
                                     <ToggleButton id={`${formId+"_4"}`} value={"2 Cr Onwards"}>
                                         2 Cr Onwards
@@ -313,7 +313,9 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                             <p className={`text-red-400 error text-sm ${errors.terms && "visible"}`}>{errors.terms ? errors.terms : "You must accept the terms"}</p>
 
                             <div className="text-center flex items-center gap-5 justify-end">
-                                <input type="submit" value={loading ? "Processing..." : button ? button : 'Download Now'} disabled={loading} className={`submit_btn cursor-pointer`} />
+                                <input type="submit" value={loading ? "Processing..." : button ? button : 'Download Now'} disabled={loading} 
+                                className={`submit_btn cursor-pointer ${(!formData.terms || loading) ? 'disabled' : ''}`}
+                                />
                             
                             </div>
                         
