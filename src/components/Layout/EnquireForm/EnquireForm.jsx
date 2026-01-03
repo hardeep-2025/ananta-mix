@@ -283,10 +283,10 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
 
                                 <ToggleButtonGroup name={`price_range_${formId}`} className='price_range_group' type="radio" value={priceRange} onChange={(val) => setPriceRange(val)}>
                                     <ToggleButton id={`${formId+"_1"}`} value={"1 Cr to 1.5 Cr"} className={`${priceRange === "1 Cr to 1.5 Cr" && 'active'}`}>
-                                        1 Cr to 1.7 Cr
+                                        1 Cr to 1.5 Cr
                                     </ToggleButton>
                                     <ToggleButton id={`${formId+"_2"}`} value={"1.5 Cr to 2 Cr"}>
-                                        1.7 Cr to 2 Cr
+                                        1.5 Cr to 2 Cr
                                     </ToggleButton>
                                     <ToggleButton id={`${formId+"_4"}`} value={"2 Cr Onwards"}>
                                         2 Cr Onwards
