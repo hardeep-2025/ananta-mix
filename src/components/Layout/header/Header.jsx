@@ -7,7 +7,7 @@ import PriceDetailsForm from "../PriceDetailsForm/PriceDetailsForm";
 import RequestDetailsForm from "../RequestDetailsForm/RequestDetailsForm";
 
 // const whatsappIcon = `${process.env.REACT_APP_API_URL}/assests/images/whatsapp.png`;
-// const phoneIcon = `${process.env.REACT_APP_API_URL}/assests/images/phone.png`;
+const phoneIcon = `${process.env.REACT_APP_API_URL}/assests/images/phone.png`;
 const logo = `${process.env.REACT_APP_API_URL}/assests/images/logo.png`;
 const menuIcon = `${process.env.REACT_APP_API_URL}/assests/images/menus.png`;
 
@@ -232,10 +232,10 @@ const Header = () => {
 
             <div className="header_right">
               <div className="header_right_top">
-                {/* <Link to={"tel:+918609000900"} className="header_call blink">
+                <Link to={"tel:+918609000900"} className="header_call blink">
                   <img src={phoneIcon} alt="Phone" className="phone_icon" />
                   +91 8609000900
-                </Link> */}
+                </Link>
                 <Button className="header_request_btn" onClick={() => openPriceForm("Get Complete Project Details", "Share your information to receive all updates on Ananta Aspire’s premium apartments and offers.", "Enquire Now", "request")}>Request Details</Button>
               </div>
               <p className="header_rera_number">PBRERA-SAS79-PR0777</p>
