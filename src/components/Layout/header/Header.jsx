@@ -232,9 +232,9 @@ const Header = () => {
 
             <div className="header_right">
               <div className="header_right_top">
-                <Link to={"tel:+918609000900"} className="header_call blink">
+                <Link to={"tel:+919915841204"} className="header_call blink">
                   <img src={phoneIcon} alt="Phone" className="phone_icon" />
-                  +91 8609000900
+                  +91 9915841204
                 </Link>
                 <Button className="header_request_btn" onClick={() => openPriceForm("Get Complete Project Details", "Share your information to receive all updates on Ananta Aspire’s premium apartments and offers.", "Enquire Now", "request")}>Request Details</Button>
               </div>
