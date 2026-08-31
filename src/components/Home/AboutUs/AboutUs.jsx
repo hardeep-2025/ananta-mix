@@ -13,7 +13,7 @@ const aboutLists = [
 
 const AboutUs = () => {
     return (
-        <div className="about_us_section padding-top" id="aboutus">
+        <div className="about_us_section padding-top padding-bottom" id="aboutus">
             <Container>
                 <Row>
                     <Col>

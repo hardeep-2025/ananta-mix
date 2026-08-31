@@ -1,0 +1,28 @@
+.blogs_slider .slick-track {
+    display: flex;
+    gap:20px;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.blog_slider_item {
+    padding: 0 10px;
+}
+.btnBlogReadMore{
+    margin-top: 32px;
+}
+
+.blog_slider_item .latest_blogs_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.linkTOImage{
+    width: 100%;
+}
+.blog_slider_item .blog_lists_image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}

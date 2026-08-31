@@ -1,3 +1,4 @@
+import BlogSlider from "../BlogPage/BlogSlider"
 import MetaData from "../Layout/MetaData"
 import AboutUs from "./AboutUs/AboutUs"
 import Amenities from "./Amenities/Amenities"
@@ -52,7 +53,9 @@ const Home = () => {
             <SmartLiving />
             <Amenities />
             <ProjectConnectivity />
-            <Gallery />
+            <Gallery />            <BlogSlider />
+
+
             <ContactUs />
         </>
     )
